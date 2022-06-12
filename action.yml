@@ -1,14 +1,12 @@
 name: "Analyze Workflow"
 description: "Analyze and give feedback on the type of git workflow used"
 inputs:
-  token:
-    description: Used to fetch repository information from graphql
-    default: ${{ github.token }}
+  working-directory:
+    description: "go-gopher working directory, default is project root"
+    required: false
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args: 
-    - ${{ github.repository }}
+  using: "docker"
+  image: "docker://gitgopher:our-image"
 branding:
   icon: "alert-triangle"
   color: "blue"
