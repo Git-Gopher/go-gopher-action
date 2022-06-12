@@ -6,7 +6,7 @@ inputs:
     required: false
 runs:
   using: "docker"
-  image: "docker://gitgopher:our-image"
+  image: "docker://gitgopher/gitgopher:latest"
 branding:
   icon: "alert-triangle"
   color: "blue"
