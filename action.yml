@@ -9,7 +9,7 @@ outputs:
     description: "A markdown summary of the workflow violations and suggestions "
 runs:
   using: "docker"
-  image: "docker://gitgopher/gitgopher:latest"
+  image: "docker://gitgopher/gitgopher:test-comment-0"
 branding:
   icon: "alert-triangle"
   color: "blue"
