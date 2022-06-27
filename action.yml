@@ -4,6 +4,9 @@ inputs:
   working-directory:
     description: "go-gopher working directory, default is project root"
     required: false
+outputs:
+  pr_summary:
+    description: "A markdown summary of the workflow violations and suggestions "
 runs:
   using: "docker"
   image: "docker://gitgopher/gitgopher:latest"
